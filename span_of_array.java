@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 public class span_of_array {
-     public static void main(String[] args) throws Exception {
+     public static void main(String[] args){
         Scanner sc= new Scanner(System.in);
         
         System.out.println("Enter size of the array-");
