@@ -15,12 +15,48 @@ public class BalancedBrakets {
 
     for(int i=0;i<str.length();i++){
         char ch = str.charAt(i);
-        if(ch == '(' || '{' || '['){
-           
-            st.push(ch);
 
+        if(ch == '(' || ch== '{' || ch== '['){
+             st.push(ch);
+        }else if(ch==')'){
+            boolean val =handleClosing(st, '(');
+            if(val == false){
+                System.out.println(val);
+                return;
+            }
+
+        }else if(ch =='}'){
+           boolean val =handleClosing(st, '(');
+            if(val == false){
+                System.out.println(val);
+                return;
+            }
+
+        }else{
+           boolean val =handleClosing(st, '(');
+            if(val == false){
+                System.out.println(val);
+                return;
+            }
         }
-   }   
+   } 
+   if(st.size()!=0){
+                System.out.println("FALSE");
+                return;           
+   }else{
+    System.out.println("TRUE");
+   } 
+
+}
+public static boolean handleClosing(Stack<Character> st, char corresopench){
+    if(st.size()==0){
+        return false;
+    }else if(st.peek() !=corresopench ){
+        return false;
+    }else{
+        st.pop();
+        return true;
+    }
 
 }
 
