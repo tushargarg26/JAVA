@@ -15,19 +15,19 @@ public class StockSpan {
             arr[i]= sc.nextInt();
         }
         Stack<Integer> st= new Stack<>();
-        int[] nge=new int[arr.length];
+        int[] span=new int[arr.length];
 
         st.push(0);
-        nge[0]=1;
+        span[0]=1;
         for(int i=1;i<arr.length;i++){
 
                 while(st.size()>0 && arr[i]>arr[st.peek()]){
                     st.pop();
                 }
                 if(st.size()==0){
-                    nge[i]=i+1;
+                    span[i]=i+1;
                }else{
-                nge[i]=i-st.peek();     
+                span[i]=i-st.peek();     
             }
             st.push(i);
                 
@@ -35,8 +35,8 @@ public class StockSpan {
             System.out.println("Span for each element-");
 
             for(int i=0; i<arr.length;i++){
-            System.out.println(nge[i]);
+            System.out.println(span[i]);
             }
-    }
-
+            
+}
 }
