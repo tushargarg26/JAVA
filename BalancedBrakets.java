@@ -3,7 +3,6 @@
  */
 
 import java.util.*;
-import java.io.*;
 
 public class BalancedBrakets {
      public static void main(String[] args){
@@ -39,6 +38,7 @@ public class BalancedBrakets {
                 return;
             }
         }
+        sc.close();
    } 
    if(st.size()!=0){
                 System.out.println("FALSE");

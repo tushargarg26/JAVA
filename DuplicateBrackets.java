@@ -14,8 +14,9 @@ public class DuplicateBrackets {
         String str= sc.nextLine();
         Stack<Character> st = new Stack<>();
 
-
-    for(int i=0;i<str.length();i++){
+        sc.close();
+        
+        for(int i=0;i<str.length();i++){
         char ch= str.charAt(i);
         if(ch==')'){
             if(st.peek()=='('){
@@ -33,10 +34,9 @@ public class DuplicateBrackets {
         }
         else{
             st.push(ch);
-        }
-       
-    }   
+        }       
+        }   
      System.out.println("FLASE: Duplicate Brakets dosen't Exists.");
-
+     
     }
 }

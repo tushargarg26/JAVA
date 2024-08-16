@@ -35,5 +35,7 @@ class RatRace{
         }
 
         System.out.println(sol(r,unit,arr,n));
+        sc.close();
     }
+
 }

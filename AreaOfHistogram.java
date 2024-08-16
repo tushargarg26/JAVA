@@ -1,6 +1,6 @@
 /* Given an array of n size. find the span(or gap of NEXT GREATER ELEMENT TO THE LEFT) for each element */
 import java.util.*;
-import java.io.*;
+
 public class AreaOfHistogram {
       public static void main(String[] args){
         Scanner sc= new Scanner(System.in);
@@ -60,6 +60,6 @@ public class AreaOfHistogram {
                 
         }
             System.out.print("Max Area in the Histogram is-" + maxArea);
-
+            sc.close();
     }
 }

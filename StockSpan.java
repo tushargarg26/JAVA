@@ -1,6 +1,5 @@
 /* Given an array of n size. find the span(or gap of NEXT GREATER ELEMENT TO THE LEFT) for each element */
 import java.util.*;
-import java.io.*;
 public class StockSpan {
     public static void main(String[] args){
         Scanner sc= new Scanner(System.in);
@@ -37,6 +36,6 @@ public class StockSpan {
             for(int i=0; i<arr.length;i++){
             System.out.println(span[i]);
             }
-            
+            sc.close();          
 }
 }

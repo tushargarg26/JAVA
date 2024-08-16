@@ -51,5 +51,6 @@ public class SumOfArrays {
         for(int val:sum){
             System.out.println(val);
         }
+        sc.close();
 }
 }

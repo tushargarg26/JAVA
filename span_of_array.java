@@ -32,6 +32,6 @@ public class span_of_array {
         System.out.println();
         int span= max-min;
          System.out.println("Span of Array= "+span);
-
+         sc.close();
     }
 }

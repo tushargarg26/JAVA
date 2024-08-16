@@ -12,6 +12,7 @@ public class DiffOfArrays {
         System.out.println("Enter Elements in the array1-");
         for(int i=0; i<a1.length;i++){
             a1[i]= sc.nextInt();
+            sc.close();
         }
 
         
@@ -61,5 +62,6 @@ public class DiffOfArrays {
             System.out.println(diff[idx]);
             idx++;
         }
+        sc.close();
     }
 }

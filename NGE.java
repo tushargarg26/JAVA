@@ -1,6 +1,5 @@
 /* Given an array of n size. find NEXT GREATER ELEMENT TO THE RIGHT for each element */
 import java.util.*;
-import java.io.*;
 public class NGE {
     public static void main(String[] args){
         Scanner sc= new Scanner(System.in);
@@ -33,5 +32,6 @@ public class NGE {
             for(int i=0; i<arr.length;i++){
             System.out.println(nge[i]);
         }
+        sc.close();
         }
   }
