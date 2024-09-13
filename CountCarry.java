@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class CountCarry {
     public static int Calculate(int num1, int num2){
         int count=0;
-        
+        System.out.println("");
 
         return count;
         
