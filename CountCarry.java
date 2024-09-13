@@ -1,32 +1,18 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CountCarry {
-    public static String Calculate(int num, int n){
-        String str="";
-        ArrayList<Integer> rem = new ArrayList<>();
-        rem.add(num%n);
+    public static int Calculate(int num1, int num2){
+        int count=0;
         
-        int quotient=num/n;
 
-        while(quotient!=0){
-           rem.add(quotient%n);
-           quotient=quotient/n;
-        }
-        for(int i=0; i<rem.size();i++){
-            if(rem.get(i)>9)
-            str= (char) (rem.get(i) -9+64)+str;
-            else
-            str= rem.get(i)+str;
-        }
-        return str;
+        return count;
         
     }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
-        int n= sc.nextInt();
-        int num = sc.nextInt();
-        System.out.println(Calculate(num, n));
+        int num1= sc.nextInt();
+        int num2 = sc.nextInt();
+        System.out.println(Calculate(num1, num2));
         sc.close();
     }   
 }
