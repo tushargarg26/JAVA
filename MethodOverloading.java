@@ -18,7 +18,7 @@ class Student{
     }
 
 }
-public class FunctionOverloading {
+public class MethodOverloading {
      public static void main(String[] args) {
         Student s1 = new Student();
         s1.name= "Tushar";
